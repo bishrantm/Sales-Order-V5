@@ -1,0 +1,183 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  /* The default background color for the application. */
+  --background: #F7F8FA;
+  /* The default color for elements or text that appears on top of the background. */
+  --foreground: #0F172A;
+  /* The background color for cards, modals, and other containers. */
+  --card: #ffffff;
+  /* The default color for text or elements that appear on top of cards, modals and other background containers. */
+  --card-foreground: #0F172A;
+  /* The background color for dropdowns and tooltips. */
+  --popover: #ffffff;
+  /* The default color for text or elements that appear on top of dropdowns and tooltips. */
+  --popover-foreground: #0F172A;
+  /* The primary color used for buttons, links, and other interactive elements. */
+  --primary: rgba(10, 119, 255, 1);
+  /* The default color for text or elements that appear on top of primary colored elements. */
+  --primary-foreground: rgba(255, 255, 255, 1);
+  /* The secondary color used for secondary(but NOT-DESTRUCTIVE) buttons and interactive elements. */
+  --secondary: #F1F5F9;
+  /* The default color for text or elements that appear on top of secondary colored elements. */
+  --secondary-foreground: #0F172A;
+  /* The muted color used for less prominent elements, such as disabled buttons or disabled text. */
+  --muted: #F1F5F9;
+  /* The default color for text or elements that appear on top of muted colored elements. */
+  --muted-foreground: #64748B;
+  /* The accent color used for highlights, links, and other interactive elements. */
+  --accent: rgba(39, 185, 115, 1);
+  /* The default color for text or elements that appear on top of accent colored elements. */
+  --accent-foreground: rgba(255, 255, 255, 1);
+  /* The color used for background in destructive actions, such as delete buttons or error messages. */
+  --destructive: rgba(255, 69, 58, 1);
+  /* The default color for text or elements that appear on top of destructive colored elements. */
+  --destructive-foreground: rgba(255, 255, 255, 1);
+  /* The default border color for elements such as inputs, buttons, and other containers. */
+  --border: #E2E8F0;
+  /* The default background color for input fields once the text has been filled. Should be either transparent or match the input-background. */
+  --input: transparent;
+  /* The default background color for input fields, text areas, and other input elements. */
+  --input-background: #F8FAFC;
+  /* The color for focus rings, outlines, and other focus indicators. */
+  --ring: rgba(10, 119, 255, 1);
+
+  /* === Elevation tokens === */
+  --elevation-0: none;
+  --elevation-1: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --elevation-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+  --elevation-2: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --elevation-3: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --elevation-4: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --elevation-5: 0 25px 50px -12px rgba(0, 0, 0, 0.18);
+
+  /* === Z-index tokens === */
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 50;
+  --z-sticky: 100;
+  --z-overlay: 200;
+  --z-modal: 300;
+  --z-popover: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* === Spacing tokens === */
+  --space-page-x: 24px;
+  --space-page-y: 32px;
+  --space-section-gap: 36px;
+  --space-card-padding: 16px;
+  --space-inline-gap: 12px;
+  --space-stack-gap: 16px;
+
+  /* === Container width tokens === */
+  --container-detail: 1696px; /* Detail page sweet-spot for 1920px displays */
+
+  /* The color for chart elements, such as a bar or line in a chart. */
+  --chart-1: rgba(10, 119, 255, 1);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-2: rgba(39, 185, 115, 1);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-3: rgba(239, 162, 47, 1);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-4: rgba(87, 78, 250, 1);
+  /* The color for another chart element, such as a bar or line in a chart. */
+  --chart-5: rgba(255, 69, 58, 1);
+  /* The default border radius for elements such as buttons, tooltip, and other containers. */
+  --radius: 0.5rem;
+  /* The background color for sidebars, navigation menus, and other persistent elements. */
+  --sidebar: #ffffff;
+  /* The default color for text or elements that appear on top of sidebars, navigation menus, and other persistent elements. */
+  --sidebar-foreground: #0F172A;
+  /* The primary color used for buttons, links, and other interactive elements in sidebars and navigation menus. */
+  --sidebar-primary: rgba(10, 119, 255, 1);
+  /* The default color for text or elements that appear on top of primary colored elements in sidebars and navigation menus. */
+  --sidebar-primary-foreground: rgba(255, 255, 255, 1);
+  /* The accent color used for highlights, links, and other interactive elements in sidebars and navigation menus. */
+  --sidebar-accent: rgba(39, 185, 115, 1);
+  /* The default color for text or elements that appear on top of accent colored elements in sidebars and navigation menus. */
+  --sidebar-accent-foreground: rgba(255, 255, 255, 1);
+  /* The default border color for elements in sidebars and navigation menus. */
+  --sidebar-border: #E2E8F0;
+  /* The default color for focus rings, outlines, and other focus indicators in sidebars and navigation menus. */
+  --sidebar-ring: rgba(10, 119, 255, 1);
+  /* Typography variables */
+  --text-h1: 40px;
+  --text-h2: 28px;
+  --text-h3: 24px;
+  --text-h4: 20px;
+  --text-base: 16px;
+  --text-label: 14px;
+  --text-caption: 12px;
+  --text-small: 11px;
+  --text-micro: 10px;
+  /* The default font weight for semi-bold text. */
+  --font-weight-semibold: 600;
+  /* The default font weight for medium text. */
+  --font-weight-medium: 500;
+  /* The default font weight for normal text. */
+  --font-weight-normal: 400;
+
+  /* === Interaction / animation tokens ===
+     Pre-mixed translucent values for hover states, focus rings,
+     and keyframe animations so components never need color-mix() or hardcoded rgba. */
+  --primary-hover-bg: rgba(10, 119, 255, 0.05);
+  --primary-active-bg: rgba(10, 119, 255, 0.08);
+  --primary-glow-subtle: rgba(10, 119, 255, 0.10);
+  --primary-glow-medium: rgba(10, 119, 255, 0.18);
+  --primary-ring-soft: rgba(10, 119, 255, 0.50);
+  --primary-border-soft: rgba(10, 119, 255, 0.35);
+  --primary-tint-card: rgba(10, 119, 255, 0.04);
+
+  --accent-hover-bg: rgba(39, 185, 115, 0.05);
+  --accent-tint-card: rgba(39, 185, 115, 0.04);
+  --accent-tint-hover: rgba(39, 185, 115, 0.07);
+
+  --destructive-hover-bg: rgba(255, 69, 58, 0.05);
+
+  --focus-ring-shadow: 0 0 0 3px rgba(10, 119, 255, 0.10);
+
+  /* White overlays — used on colored gradient backgrounds (e.g. stepper on shipped stage) */
+  --overlay-white-12: rgba(255, 255, 255, 0.12);
+  --overlay-white-15: rgba(255, 255, 255, 0.15);
+  --overlay-white-25: rgba(255, 255, 255, 0.25);
+  --overlay-white-35: rgba(255, 255, 255, 0.35);
+  --overlay-white-50: rgba(255, 255, 255, 0.50);
+
+  /* Allocate-rainbow gradient stops (pre-mixed so CSS never needs color-mix()) */
+  --rainbow-primary-40: rgba(10, 119, 255, 0.40);
+  --rainbow-primary-50: rgba(10, 119, 255, 0.50);
+  --rainbow-purple-blue: rgba(64, 90, 248, 1);
+}
+
+.allocate-rainbow::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--rainbow-angle),
+    var(--primary),
+    var(--rainbow-primary-40),
+    var(--rainbow-purple-blue),
+    var(--primary),
+    var(--rainbow-primary-50),
+    var(--chart-4),
+    var(--primary)
+  );
+}
+
+.allocate-rainbow::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--rainbow-angle),
+    var(--primary),
+    var(--rainbow-primary-40),
+    var(--chart-4),
+    var(--primary)
+  );
+}
